@@ -27,10 +27,19 @@ var firebaseConfig = {
 //on click and obtain user input
   $("button").on("click", function(){
       event.preventDefault();
+
       var trainName  =$("#trainName").val().trim();
       var destination =$("#destination").val().trim();
       var trainTime = $("#trainTime").val().trim();
       var frequency = $("#frequency").val().trim();
+
+
+
+      if (trainName === "" || destination === "" || trainTime === "" || frequency ===""){
+          alert("Be sure to fill all information in!");
+          return;
+      } 
+      else{
 
 
       console.log(trainName, destination, trainTime, frequency);
@@ -49,8 +58,8 @@ var firebaseConfig = {
       $("#destination").val("");
       $("#trainTime").val("");
       $("#frequency").val("");
-  });
-
+  }; 
+});
 //adding to table from database
 
   database.ref().on("child_added", function(snapshot){
@@ -124,8 +133,6 @@ var firebaseConfig = {
     }
 
   });
-
-
 
 
 
