@@ -9,4 +9,5 @@ This application uses Javascript and the page refreshes every 60 seconds.
 * Moment.JS
 * JavaScript
 * BootStrap
+* Firebase
     
