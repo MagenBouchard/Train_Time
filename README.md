@@ -6,7 +6,7 @@ This application uses Javascript and the page refreshes every 60 seconds.
 
 
 # Technologies Used
-    Moment.JS
-    JavaScript
-    BootStrap
+* Moment.JS
+* JavaScript
+* BootStrap
     
